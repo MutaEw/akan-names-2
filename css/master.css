@@ -1,0 +1,56 @@
+
+.body {
+    background:url(/home/emuta/Documents/akan-names/images/flag.jpg);
+
+}
+
+.card {
+    -ms-flex: 8 auto;
+    flex: 8 auto;
+    min-height: 6px;
+    padding: 3rem;
+  }
+  @media (min-width: 500px) {
+    .card-deck {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      margin-right: -10px;
+      margin-left: -10px;
+
+h1 {
+    color:black;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+li {
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    text-transform:uppercase;
+}
+.container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .container img {initial-letter-align: middle;}
+  
+  .container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
