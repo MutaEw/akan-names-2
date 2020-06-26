@@ -3,6 +3,26 @@
     background:url(/home/emuta/Documents/akan-names/images/flag.jpg);
 
 }
+body {
+  margin: 30px;
+}
+  
+}
+.container
+{
+  border: 1px solid black;
+
+}
+.row 
+{
+  border: 5px solid red;
+
+}
+.col {
+  border: 5px solid blue;
+}
+
+
 
 .card {
     -ms-flex: 8 auto;
