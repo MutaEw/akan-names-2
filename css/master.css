@@ -5,39 +5,8 @@
 }
 body {
   margin: 30px;
+  display: flex;
 }
-  
-}
-.container
-{
-  border: 1px solid black;
-
-}
-.row 
-{
-  border: 5px solid red;
-
-}
-.col {
-  border: 5px solid blue;
-}
-
-
-
-.card {
-    -ms-flex: 8 auto;
-    flex: 8 auto;
-    min-height: 6px;
-    padding: 3rem;
-  }
-  @media (min-width: 500px) {
-    .card-deck {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-      margin-right: -10px;
-      margin-left: -10px;
 
 h1 {
     color:black;
@@ -61,6 +30,7 @@ li {
     position: relative;
     max-width: 400px;
     margin: 0 auto;
+    
   }
   
   .container img {initial-letter-align: middle;}
@@ -73,4 +43,5 @@ li {
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+    
   }
