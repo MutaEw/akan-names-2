@@ -8,6 +8,8 @@ function getFormValues(){
     var dayElement = document.getElementById("day");
     var monthElement = document.getElementById("month");
     var yearElement = document.getElementById("year");
+    console.log(day);
+    console.log(dateOfBirth);
 
     day=dayElement.options[dayElement.selectedIndex].value;
 
@@ -33,14 +35,14 @@ function getFormValues(){
         alert("Enter a valid date");
         }
     }
-}else{
+}else{ 
     showAkanName(day,month,year,gender);
 }
 
 }
 
-function showAkanName(datesected,month,year,gender){
-    var dayOfWeek = Math.trunc(getDayOfWeek(datesected,month,year))
+function showAkanName(dateselected,month,year,gender){
+    var dayOfWeek = Math.trunc(getDayOfWeek(dateselected,month,year))
     var male =[
         {"day":"Sunday","name":"Kwasi"},
         {"day":"Monday","name":"Kwadwo"},

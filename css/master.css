@@ -1,9 +1,7 @@
 
-.body {
-    background:url(/home/emuta/Documents/akan-names/images/flag.jpg);
 
 }
-body {
+.body {
   margin: 30px;
   display: flex;
 }
@@ -13,6 +11,7 @@ h1 {
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    
 }
 p {
     color: black;
@@ -22,7 +21,7 @@ p {
 }
 li {
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     text-align: left;
     text-transform:uppercase;
 }
