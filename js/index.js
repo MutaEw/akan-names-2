@@ -1,6 +1,6 @@
 function getFormValues(){
 
-    Var day="";
+    var day="";
     var month="";
     var year="";
     var gender="";
@@ -9,7 +9,9 @@ function getFormValues(){
     var monthElement = document.getElementById("month");
     var yearElement = document.getElementById("year");
     console.log(day);
-    console.log(dateOfBirth);
+    console.log(month);
+    console.log(year);
+    console.log(gender)
 
     day=dayElement.options[dayElement.selectedIndex].value;
 
@@ -26,12 +28,12 @@ function getFormValues(){
     }
     if(gender=== "NONE"){
         alert("You must select gender");
-    }else if(parseInt(day)<=0 || parseInt(day) >31){
-        alert("Enter correct day of the month");
-    }else if(parseInt(month)<=0 || parseInt(month) >12){
-        alert("Enter correct value of the month");
-    }else if(parseInt(month)==2){
-        if(parseInt(year)% 4 == 0 && parseInt (day)>29){
+    }else if(parseInt(day)<='0' || parseInt(day)>'31'){
+        alert("Invalid Day Entry ");
+    }else if(parseInt(month)<='0' || parseInt(month) >'12'){
+        alert("Invalid Month Entry");
+    }else if(parseInt(month)=='2'){
+        if(parseInt(year)% 4 == '0' && parseInt (day)>'29'){
         alert("Enter a valid date");
         }
     }
@@ -72,8 +74,8 @@ function showAkanName(dateselected,month,year,gender){
     }
 }
 
-function getDayOfWeek(day,month,year){
-
+function getFormValues()day;month;year; gender;
+{
     var CC =parseInt(year.substring(0, 2));
     var YY = parseInt(year.substring(2, 4));
     var MM = parseInt(month);

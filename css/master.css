@@ -1,10 +1,11 @@
 
-
-}
-.body {
+body {
   margin: 30px;
   display: flex;
+  justify-content: space-around;
+  
 }
+
 
 h1 {
     color:black;
@@ -13,6 +14,10 @@ h1 {
     text-align: center;
     
 }
+.div {
+  display: flex;
+}
+
 p {
     color: black;
     font-size: 20px;
@@ -23,24 +28,4 @@ li {
     color: black;
     font-size: 20px;
     text-align: left;
-    text-transform:uppercase;
-}
-.container {
-    position: relative;
-    max-width: 400px;
-    margin: 0 auto;
-    
-  }
-  
-  .container img {initial-letter-align: middle;}
-  
-  .container .content {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-    
-  }
+    text-transform:uppercase;}
