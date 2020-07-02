@@ -1,4 +1,4 @@
-function getFormValues(){
+function getFormValues(e) {
 
     var day="";
     var month="";
@@ -37,11 +37,11 @@ function getFormValues(){
         alert("Enter a valid date");
         }
     }
-}else{ 
-    showAkanName(day,month,year,gender);
+
+ else   showAkanName(day,month,year,gender);
 }
 
-}
+
 
 function showAkanName(dateselected,month,year,gender){
     var dayOfWeek = Math.trunc(getDayOfWeek(dateselected,month,year))
@@ -74,7 +74,7 @@ function showAkanName(dateselected,month,year,gender){
     }
 }
 
-function getFormValues()day;month;year; gender;
+function getFormValues()
 {
     var CC =parseInt(year.substring(0, 2));
     var YY = parseInt(year.substring(2, 4));

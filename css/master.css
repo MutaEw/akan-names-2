@@ -1,8 +1,8 @@
 
 body {
   margin: 30px;
-  display: flex;
   justify-content: space-around;
+  /* background-image: url("../images/kenke.jpg"); */
   
 }
 
@@ -13,9 +13,6 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     
-}
-.div {
-  display: flex;
 }
 
 p {
@@ -29,3 +26,7 @@ li {
     font-size: 20px;
     text-align: left;
     text-transform:uppercase;}
+
+  .male {
+    border-style: dashed;
+  }
