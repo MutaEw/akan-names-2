@@ -74,7 +74,7 @@ function showAkanName(dateselected,month,year,gender){
     }
 }
 
-function getFormValues()dayOfWeek;month;year;gender;
+function getFormValues()
 {
     var CC =parseInt(year.substring(0, 2));
     var YY = parseInt(year.substring(2, 4));

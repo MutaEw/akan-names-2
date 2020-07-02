@@ -1,8 +1,8 @@
 
 body {
   margin: 30px;
-  display: flex;
   justify-content: space-around;
+  
   
 }
 
@@ -13,9 +13,6 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     
-}
-.div {
-  display: flex;
 }
 
 p {
@@ -28,4 +25,18 @@ li {
     color: black;
     font-size: 20px;
     text-align: left;
-    text-transform:uppercase;}
+    text-transform:uppercase;
+  }
+  .male {
+    border-style: groove;
+  }
+  .female {
+    border-style: groove;
+  }
+  .computation {
+    border-style: groove;
+    text-align: center;
+    
+    font-size: 15px;
+    
+  }
