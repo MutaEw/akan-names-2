@@ -2,7 +2,7 @@
 body {
   margin: 30px;
   justify-content: space-around;
-  
+  background-image: url(../images/flag.jpg)
   
 }
 
@@ -29,14 +29,49 @@ li {
   }
   .male {
     border-style: groove;
+    flex: 2; 
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
   }
   .female {
-    border-style: groove;
+    border-style: groove; 
+    flex: 2;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
   }
   .computation {
     border-style: groove;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
     text-align: center;
-    
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    flex: 1;
+    background-image: url(../images/kenke.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom; 
     
   }
+  .colorBtn{
+    color: brown;
+    text-transform: uppercase;
+   border-style: groove; 
+  }
+  .colorBtn:hover{
+    background-image: url(../images/kenke.jpg);
+  }
+
+  .div {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+.footer{
+  text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}

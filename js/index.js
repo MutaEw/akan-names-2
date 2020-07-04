@@ -8,16 +8,20 @@ function getFormValues(){
     var dayElement = document.getElementById("day");
     var monthElement = document.getElementById("month");
     var yearElement = document.getElementById("year");
+    var genderElement = document.getElementById("gender");
+    
     console.log(day);
     console.log(month);
     console.log(year);
     console.log(gender)
 
-    day=dayElement.options[dayElement.selectedIndex].value;
+    day=dayElement.options[dayElement.inputdIndex].value;
 
-    month=monthElement.options[monthElement.selectedIndex].value;
+    month=monthElement.options[monthElement.inputdIndex].value;
 
-    year=yearElement.options[yearElement.selectedIndex].value;
+    year=yearElement.options[yearElement.inputdIndex].value;
+
+    gender=genderElement.options[genderElement.selectedIndex].value;
 
     if(document.getElementById('male').checked){
         gender='male';
@@ -37,10 +41,9 @@ function getFormValues(){
         alert("Enter a valid date");
         }
     }
-}else{ 
-    showAkanName(day,month,year,gender);
-}
-
+    else{ 
+        showAkanName(day,month,year,gender);
+    }
 }
 
 function showAkanName(dateselected,month,year,gender){
@@ -68,7 +71,8 @@ function showAkanName(dateselected,month,year,gender){
     if(gender === "male"){
         var nameArray = male[dayOfWeek-1];
         alert("You were born on a" + nameArray.day + "and your Akan name is" + nameArray.name);
-    }else{
+    }
+    else{
         var nameArray = female[dayOfWeek - 1];
         alert ("You were born on a" + nameArray.day + "and your Akan name is" + nameArray.name);
     }

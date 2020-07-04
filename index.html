@@ -35,16 +35,23 @@
     </div>
 
       <div class="computation col-">
-        <img src="images/flag.jpg" width="100"; height="100" alt="This is a picture of the Ghanaian flag">
+        
         <form name="myForm" onsubmit="getFormValues()">
         SELECT GENDER
         <br>
-        <input type="radio" id="male" name="gender" value="male" checked="checked"> male</br>
+        <button type="button" class="colorBtn" id="male" name="gender" value="male" checked="checked"> male</br>
+        </button>
+    
+        <button type="button" class="colorBtn" id="female" name="gender" value="female" checked="checked">female</br>
+        </button>
         <br>
-        <input type="radio" id="female" name="gender" value="female" checked="checked">female</br>
-        <br>
-        <label for="birthday">: Date/Month/year</label>
-        <input type="text" name="birthday" id="bDay">
+        <label for="Day">Date:</label>
+        <input type="day" id="date" name="date"><br><br>
+        <label for="month">Month:</label>
+        <input type="text" id="month" name="month"><br><br>
+        <label for="year">Year:</label>
+        <input type="year" id="year" name="year"><br><br>
+        
         <strong><button onclick="getFormValues()";>submit</button></strong>
         <input type="reset" value="Reset"></br>
         </form>

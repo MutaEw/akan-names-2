@@ -160,10 +160,7 @@
     getSelectorFromElement: function getSelectorFromElement(element) {
       var selector = element.getAttribute('data-target');
 
-      if (!selector || selector === '#') {
-        var hrefAttr = element.getAttribute('href');
-        selector = hrefAttr && hrefAttr !== '#' ? hrefAttr.trim() : '';
-      }
+      selector = newFunction(selector, element);
 
       try {
         return document.querySelector(selector) ? selector : null;
@@ -4417,4 +4414,12 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+
+function newFunction(selector, element) {
+  if (!selector || selector === '#') {
+    var hrefAttr = element.getAttribute('href');
+    selector = hrefAttr && hrefAttr !== '#' ? hrefAttr.trim() : '';
+  }
+  return selector;
+}
 //# sourceMappingURL=bootstrap.js.map
